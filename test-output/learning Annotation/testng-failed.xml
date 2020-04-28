@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [learning Annotation]" guice-stage="DEVELOPMENT">
+  <test thread-count="5" name="login function(failed)">
+    <classes>
+      <class name="Baselearnpkg.Tannotation">
+        <methods>
+          <include name="deconfig"/>
+          <include name="launchbrowser"/>
+          <include name="quit"/>
+          <include name="login"/>
+          <include name="closedb"/>
+          <include name="DBconnection"/>
+          <include name="register1"/>
+          <include name="register2"/>
+          <include name="configuration"/>
+        </methods>
+      </class> <!-- Baselearnpkg.Tannotation -->
+    </classes>
+  </test> <!-- login function(failed) -->
+</suite> <!-- Failed suite [learning Annotation] -->

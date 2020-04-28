@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="2" total="5" passed="2" failed="0" skipped="1">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2020-04-28T15:29:39Z" name="Skipping Testscases" finished-at="2020-04-28T15:29:39Z" duration-ms="80">
+    <groups>
+      <group name="smoke">
+        <method signature="dashboard.displaybashboard()[pri:0, instance:Baselearnpkg.dashboard@762ef0ea]" name="displaybashboard" class="Baselearnpkg.dashboard"/>
+        <method signature="dashboard.displayskip()[pri:0, instance:Baselearnpkg.dashboard@762ef0ea]" name="displayskip" class="Baselearnpkg.dashboard"/>
+        <method signature="dashboard.serach()[pri:0, instance:Baselearnpkg.dashboard@762ef0ea]" name="serach" class="Baselearnpkg.dashboard"/>
+      </group> <!-- smoke -->
+      <group name="sanity">
+        <method signature="dashboard.displaybashboard()[pri:0, instance:Baselearnpkg.dashboard@762ef0ea]" name="displaybashboard" class="Baselearnpkg.dashboard"/>
+      </group> <!-- sanity -->
+    </groups>
+    <test started-at="2020-04-28T15:29:39Z" name="Dash board" finished-at="2020-04-28T15:29:39Z" duration-ms="80">
+      <class name="Baselearnpkg.dashboard">
+        <test-method is-config="true" signature="beforemethod()[pri:0, instance:Baselearnpkg.dashboard@762ef0ea]" started-at="2020-04-28T15:29:39Z" name="beforemethod" finished-at="2020-04-28T15:29:39Z" duration-ms="19" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforemethod -->
+        <test-method signature="displaybashboard()[pri:0, instance:Baselearnpkg.dashboard@762ef0ea]" started-at="2020-04-28T15:29:39Z" name="displaybashboard" finished-at="2020-04-28T15:29:39Z" duration-ms="10" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- displaybashboard -->
+        <test-method is-config="true" signature="Aftermethod()[pri:0, instance:Baselearnpkg.dashboard@762ef0ea]" started-at="2020-04-28T15:29:39Z" name="Aftermethod" finished-at="2020-04-28T15:29:39Z" duration-ms="2" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Aftermethod -->
+        <test-method signature="displayskip()[pri:0, instance:Baselearnpkg.dashboard@762ef0ea]" started-at="2020-04-28T15:29:39Z" name="displayskip" finished-at="2020-04-28T15:29:39Z" duration-ms="3" status="SKIP">
+          <exception class="org.testng.SkipException">
+            <message>
+              <![CDATA[Incmplete Test case]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.testng.SkipException: Incmplete Test case
+at Baselearnpkg.dashboard.displayskip(dashboard.java:34)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+at java.base/java.lang.reflect.Method.invoke(Unknown Source)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+at org.testng.internal.Invoker.invokeMethod(Invoker.java:580)
+at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:716)
+at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:988)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+at org.testng.TestRunner.privateRun(TestRunner.java:648)
+at org.testng.TestRunner.run(TestRunner.java:505)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+at org.testng.TestNG.runSuites(TestNG.java:1049)
+at org.testng.TestNG.run(TestNG.java:1017)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.testng.SkipException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- displayskip -->
+        <test-method is-config="true" signature="beforemethod()[pri:0, instance:Baselearnpkg.dashboard@762ef0ea]" started-at="2020-04-28T15:29:39Z" name="beforemethod" finished-at="2020-04-28T15:29:39Z" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforemethod -->
+        <test-method is-config="true" signature="Aftermethod()[pri:0, instance:Baselearnpkg.dashboard@762ef0ea]" started-at="2020-04-28T15:29:39Z" name="Aftermethod" finished-at="2020-04-28T15:29:39Z" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Aftermethod -->
+        <test-method is-config="true" signature="beforemethod()[pri:0, instance:Baselearnpkg.dashboard@762ef0ea]" started-at="2020-04-28T15:29:39Z" name="beforemethod" finished-at="2020-04-28T15:29:39Z" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforemethod -->
+        <test-method signature="serach()[pri:0, instance:Baselearnpkg.dashboard@762ef0ea]" started-at="2020-04-28T15:29:39Z" name="serach" finished-at="2020-04-28T15:29:39Z" duration-ms="5" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- serach -->
+        <test-method is-config="true" signature="Aftermethod()[pri:0, instance:Baselearnpkg.dashboard@762ef0ea]" started-at="2020-04-28T15:29:39Z" name="Aftermethod" finished-at="2020-04-28T15:29:39Z" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Aftermethod -->
+      </class> <!-- Baselearnpkg.dashboard -->
+    </test> <!-- Dash board -->
+  </suite> <!-- Skipping Testscases -->
+</testng-results>
