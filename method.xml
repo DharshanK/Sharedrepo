@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+
+
+<suite name="Methodcalling">
+
+
+  <test name="Methodcalling">
+  
+<classes>
+
+<class name="Baselearnpkg.Ta.*">
+
+<methods>
+
+<include name="reg.*"></include>
+
+</methods>
+
+</class>
+
+
+</classes>
+    
+  </test> <!-- Test -->
+  
+  
+
+  
+</suite> <!-- Suite -->

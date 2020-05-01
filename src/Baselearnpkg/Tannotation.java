@@ -7,6 +7,7 @@ import org.testng.annotations.AfterTest;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.BeforeSuite;
 import org.testng.annotations.BeforeTest;
+import org.testng.annotations.Parameters;
 import org.testng.annotations.Test;
 
 public class Tannotation {
@@ -30,7 +31,7 @@ public void launchbrowser()
 	System.out.println("Launching browser and navigating to URl");
 }
 	
-@Test(dependsOnMethods= {"register1","register2"})
+@Test(dependsOnMethods= {"register1"})
 
 public void login()
 {
@@ -57,7 +58,12 @@ public void register2() throws InterruptedException
 
 }
 
-
+@Test
+@Parameters({"browser"})
+public void bowser(String b)
+{
+	System.out.println("Browser initilization : " +b);
+}
 
 
 @AfterMethod

@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+
+
+<suite name="Testingparam">
+
+<parameter name="user" value ="Test4"></parameter>
+<parameter name="pass" value ="password4"></parameter>
+<parameter name="browser" value ="Chrome"></parameter>
+  <test name="XMLPara">
+  
+    <classes>
+      <class name="Baselearnpkg.Testparam"/>
+      <class name="Baselearnpkg.Tannotation">
+      <methods>
+      <include name="bowser"></include>
+      
+      </methods>
+      
+    </class>
+    </classes>
+    
+  </test> <!-- Test -->
+  
+   
+</suite> <!-- Suite -->

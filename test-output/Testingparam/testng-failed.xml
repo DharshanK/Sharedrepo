@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Testingparam]" guice-stage="DEVELOPMENT">
+  <parameter name="pass" value="password4"/>
+  <parameter name="user" value="Test4"/>
+  <test thread-count="5" name="XMLPara(failed)">
+    <classes>
+      <class name="Baselearnpkg.Testparam">
+        <methods>
+          <include name="login"/>
+        </methods>
+      </class> <!-- Baselearnpkg.Testparam -->
+    </classes>
+  </test> <!-- XMLPara(failed) -->
+</suite> <!-- Failed suite [Testingparam] -->

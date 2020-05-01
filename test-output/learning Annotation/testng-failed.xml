@@ -3,19 +3,12 @@
 <suite name="Failed suite [learning Annotation]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="login function(failed)">
     <classes>
-      <class name="Baselearnpkg.Tannotation">
+      <class name="Baselearnpkg.Tasset">
         <methods>
-          <include name="deconfig"/>
-          <include name="launchbrowser"/>
-          <include name="quit"/>
-          <include name="login"/>
-          <include name="closedb"/>
-          <include name="DBconnection"/>
-          <include name="register1"/>
-          <include name="register2"/>
-          <include name="configuration"/>
+          <include name="Hardassert"/>
+          <include name="assertfunc"/>
         </methods>
-      </class> <!-- Baselearnpkg.Tannotation -->
+      </class> <!-- Baselearnpkg.Tasset -->
     </classes>
   </test> <!-- login function(failed) -->
 </suite> <!-- Failed suite [learning Annotation] -->

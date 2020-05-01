@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Methodcalling]" guice-stage="DEVELOPMENT">
+  <test thread-count="5" name="Methodcalling(failed)">
+    <classes>
+      <class name="Baselearnpkg.Tannotation">
+        <methods>
+          <include name="deconfig"/>
+          <include name="launchbrowser"/>
+          <include name="quit"/>
+          <include name="closedb"/>
+          <include name="DBconnection"/>
+          <include name="register2"/>
+          <include name="configuration"/>
+        </methods>
+      </class> <!-- Baselearnpkg.Tannotation -->
+    </classes>
+  </test> <!-- Methodcalling(failed) -->
+</suite> <!-- Failed suite [Methodcalling] -->
