@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+
+
+<suite name="Dataprovider">
+
+<listeners>
+<listener class-name="Baselearnpkg.Tlistener"></listener>
+</listeners>
+
+  <test name="login">
+  
+    <classes>
+      <class name="Baselearnpkg.readdata"/>
+     
+    </classes>
+    
+  </test> <!-- Test -->
+  
+  
+
+  
+</suite> <!-- Suite -->

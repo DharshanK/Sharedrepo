@@ -24,7 +24,7 @@
     <div class="top-banner-root">
       <span class="top-banner-title-font">Test results</span>
       <br/>
-      <span class="top-banner-font-1">1 suite</span>
+      <span class="top-banner-font-1">1 suite, 2 failed tests</span>
     </div> <!-- top-banner-root -->
     <div class="navigator-root">
       <div class="navigator-suite-header">
@@ -38,7 +38,7 @@
         <div class="rounded-window">
           <div class="suite-header light-rounded-window-top">
             <a href="#" panel-name="suite-Dataprovider" class="navigator-link">
-              <span class="suite-name border-passed">Dataprovider</span>
+              <span class="suite-name border-failed">Dataprovider</span>
             </a> <!-- navigator-link -->
           </div> <!-- suite-header light-rounded-window-top -->
           <div class="navigator-suite-content">
@@ -49,7 +49,7 @@
               <ul>
                 <li>
                   <a href="#" panel-name="test-xml-Dataprovider" class="navigator-link ">
-                    <span>C:\Users\DHARSAN K\eclipse-workspace\TestNGbasics\dataproviderxml.xml</span>
+                    <span>C:\Users\DHARSAN K\eclipse-workspace\TestNGbasics\externaldataprovider.xml</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
@@ -91,7 +91,26 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">4 methods,   4 passed</span>
+                    <span class="method-stats">4 methods, 2 failed,   2 passed</span>
+                  </li>
+                  <li>
+                    <span class="method-list-title failed">Failed methods</span>
+                    <span class="show-or-hide-methods failed">
+                      <a href="#" panel-name="suite-Dataprovider" class="hide-methods failed suite-Dataprovider"> (hide)</a> <!-- hide-methods failed suite-Dataprovider -->
+                      <a href="#" panel-name="suite-Dataprovider" class="show-methods failed suite-Dataprovider"> (show)</a> <!-- show-methods failed suite-Dataprovider -->
+                    </span>
+                    <div class="method-list-content failed suite-Dataprovider">
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Dataprovider" title="Baselearnpkg.readdata" class="method navigator-link" hash-for-method="login(Test2, pas2)">login(Test2, pas2)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Dataprovider" title="Baselearnpkg.readdata" class="method navigator-link" hash-for-method="login(Test1, pass1)">login(Test1, pass1)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content failed suite-Dataprovider -->
                   </li>
                   <li>
                     <span class="method-list-title passed">Passed methods</span>
@@ -102,22 +121,12 @@
                     <div class="method-list-content passed suite-Dataprovider">
                       <span>
                         <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Dataprovider" title="Baselearnpkg.cdata" class="method navigator-link" hash-for-method="login(Test1, pass1)">login(Test1, pass1)</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-Dataprovider" title="Baselearnpkg.readdata" class="method navigator-link" hash-for-method="Register(User2, last1, Test2@fmail.com)">Register(User2, last1, Test2@fmail.com)</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
                         <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Dataprovider" title="Baselearnpkg.cdata" class="method navigator-link" hash-for-method="login(Test1, pass1)">login(Test1, pass1)</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Dataprovider" title="Baselearnpkg.cdata" class="method navigator-link" hash-for-method="login(Test2, pas2)">login(Test2, pas2)</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Dataprovider" title="Baselearnpkg.cdata" class="method navigator-link" hash-for-method="login(Test2, pas2)">login(Test2, pas2)</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-Dataprovider" title="Baselearnpkg.readdata" class="method navigator-link" hash-for-method="Register(User1, last1, Test1@fmail.com)">Register(User1, last1, Test1@fmail.com)</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                     </div> <!-- method-list-content passed suite-Dataprovider -->
@@ -132,42 +141,58 @@
     <div class="wrapper">
       <div class="main-panel-root">
         <div panel-name="suite-Dataprovider" class="panel Dataprovider">
-          <div class="suite-Dataprovider-class-passed">
+          <div class="suite-Dataprovider-class-failed">
             <div class="main-panel-header rounded-window-top">
-              <img src="passed.png"/>
-              <span class="class-name">Baselearnpkg.cdata</span>
+              <img src="failed.png"/>
+              <span class="class-name">Baselearnpkg.readdata</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="login(Test1, pass1)">
-                  </a> <!-- login(Test1, pass1) -->
-                  <span class="method-name">login</span>
-                  <span class="parameters">(Test1, pass1)</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="login(Test1, pass1)">
-                  </a> <!-- login(Test1, pass1) -->
-                  <span class="method-name">login</span>
-                  <span class="parameters">(Test1, pass1)</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
                   <a name="login(Test2, pas2)">
                   </a> <!-- login(Test2, pas2) -->
                   <span class="method-name">login</span>
                   <span class="parameters">(Test2, pas2)</span>
+                  <div class="stack-trace">java.lang.AssertionError: null
+	at Baselearnpkg.readdata.login(readdata.java:16)
+... Removed 27 stack frames
+</div> <!-- stack-trace -->
                 </div> <!-- method-content -->
               </div> <!-- method -->
               <div class="method">
                 <div class="method-content">
-                  <a name="login(Test2, pas2)">
-                  </a> <!-- login(Test2, pas2) -->
+                  <a name="login(Test1, pass1)">
+                  </a> <!-- login(Test1, pass1) -->
                   <span class="method-name">login</span>
-                  <span class="parameters">(Test2, pas2)</span>
+                  <span class="parameters">(Test1, pass1)</span>
+                  <div class="stack-trace">java.lang.AssertionError: null
+	at Baselearnpkg.readdata.login(readdata.java:16)
+... Removed 27 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Dataprovider-class-failed -->
+          <div class="suite-Dataprovider-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">Baselearnpkg.readdata</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="Register(User2, last1, Test2@fmail.com)">
+                  </a> <!-- Register(User2, last1, Test2@fmail.com) -->
+                  <span class="method-name">Register</span>
+                  <span class="parameters">(User2, last1, Test2@fmail.com)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="Register(User1, last1, Test1@fmail.com)">
+                  </a> <!-- Register(User1, last1, Test1@fmail.com) -->
+                  <span class="method-name">Register</span>
+                  <span class="parameters">(User1, last1, Test1@fmail.com)</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
@@ -175,16 +200,19 @@
         </div> <!-- panel Dataprovider -->
         <div panel-name="test-xml-Dataprovider" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">C:\Users\DHARSAN K\eclipse-workspace\TestNGbasics\dataproviderxml.xml</span>
+            <span class="header-content">C:\Users\DHARSAN K\eclipse-workspace\TestNGbasics\externaldataprovider.xml</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <pre>
 &lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
 &lt;!DOCTYPE suite SYSTEM &quot;http://testng.org/testng-1.0.dtd&quot;&gt;
 &lt;suite name=&quot;Dataprovider&quot; guice-stage=&quot;DEVELOPMENT&quot;&gt;
+  &lt;listeners&gt;
+    &lt;listener class-name=&quot;Baselearnpkg.Tlistener&quot;/&gt;
+  &lt;/listeners&gt;
   &lt;test thread-count=&quot;5&quot; name=&quot;login&quot;&gt;
     &lt;classes&gt;
-      &lt;class name=&quot;Baselearnpkg.cdata&quot;/&gt;
+      &lt;class name=&quot;Baselearnpkg.readdata&quot;/&gt;
     &lt;/classes&gt;
   &lt;/test&gt; &lt;!-- login --&gt;
 &lt;/suite&gt; &lt;!-- Dataprovider --&gt;
@@ -227,25 +255,25 @@ data.addColumn('number', 'Time (ms)');
 data.addRows(4);
 data.setCell(0, 0, 0)
 data.setCell(0, 1, 'login')
-data.setCell(0, 2, 'Baselearnpkg.cdata')
-data.setCell(0, 3, 14);
+data.setCell(0, 2, 'Baselearnpkg.readdata')
+data.setCell(0, 3, 18);
 data.setCell(1, 0, 1)
-data.setCell(1, 1, 'login')
-data.setCell(1, 2, 'Baselearnpkg.cdata')
-data.setCell(1, 3, 13);
+data.setCell(1, 1, 'Register')
+data.setCell(1, 2, 'Baselearnpkg.readdata')
+data.setCell(1, 3, 15);
 data.setCell(2, 0, 2)
 data.setCell(2, 1, 'login')
-data.setCell(2, 2, 'Baselearnpkg.cdata')
-data.setCell(2, 3, 7);
+data.setCell(2, 2, 'Baselearnpkg.readdata')
+data.setCell(2, 3, 2);
 data.setCell(3, 0, 3)
-data.setCell(3, 1, 'login')
-data.setCell(3, 2, 'Baselearnpkg.cdata')
-data.setCell(3, 3, 4);
+data.setCell(3, 1, 'Register')
+data.setCell(3, 2, 'Baselearnpkg.readdata')
+data.setCell(3, 3, 1);
 window.suiteTableData['Dataprovider']= { tableData: data, tableDiv: 'times-div-Dataprovider'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 38 ms</span>
+              <span class="suite-total-time">Total running time: 36 ms</span>
               <div id="times-div-Dataprovider">
               </div> <!-- times-div-Dataprovider -->
             </div> <!-- times-div -->
@@ -256,6 +284,40 @@ return data;
             <span class="header-content">Reporter output for Dataprovider</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
+            <div class="reporter-method-div">
+              <span class="reporter-method-name">Register(User2, last1, Test2@fmail.com)</span>
+              <div class="reporter-method-output-div">
+                <span class="reporter-method-output">Register is passed</span>
+              </div> <!-- reporter-method-output-div -->
+            </div> <!-- reporter-method-div -->
+            <div class="reporter-method-div">
+              <span class="reporter-method-name">Register(User1, last1, Test1@fmail.com)</span>
+              <div class="reporter-method-output-div">
+                <span class="reporter-method-output">Register is passed</span>
+              </div> <!-- reporter-method-output-div -->
+            </div> <!-- reporter-method-div -->
+            <div class="reporter-method-div">
+              <span class="reporter-method-name">login(Test2, pas2)</span>
+              <div class="reporter-method-output-div">
+                <span class="reporter-method-output">username Entered is : Test2</span>
+                <span class="reporter-method-output">Password Entered is : pas2</span>
+                <span class="reporter-method-output">login is failed</span>
+                <span class="reporter-method-output"><a href="C:\quote.jpg" target="_blank">Test case failed :</a>login</span>
+                <span class="reporter-method-output"><br></span>
+                <span class="reporter-method-output"><a href="C:\quote.jpg" target="_blank"><img height=200 width=200 src="C:\quote.jpg"></img></a>login</span>
+              </div> <!-- reporter-method-output-div -->
+            </div> <!-- reporter-method-div -->
+            <div class="reporter-method-div">
+              <span class="reporter-method-name">login(Test1, pass1)</span>
+              <div class="reporter-method-output-div">
+                <span class="reporter-method-output">username Entered is : Test1</span>
+                <span class="reporter-method-output">Password Entered is : pass1</span>
+                <span class="reporter-method-output">login is failed</span>
+                <span class="reporter-method-output"><a href="C:\quote.jpg" target="_blank">Test case failed :</a>login</span>
+                <span class="reporter-method-output"><br></span>
+                <span class="reporter-method-output"><a href="C:\quote.jpg" target="_blank"><img height=200 width=200 src="C:\quote.jpg"></img></a>login</span>
+              </div> <!-- reporter-method-output-div -->
+            </div> <!-- reporter-method-div -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
         <div panel-name="ignored-methods-Dataprovider" class="panel">
@@ -271,22 +333,26 @@ return data;
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <div class="chronological-class">
-              <div class="chronological-class-name">Baselearnpkg.cdata</div> <!-- chronological-class-name -->
+              <div class="chronological-class-name">Baselearnpkg.readdata</div> <!-- chronological-class-name -->
               <div class="test-method">
-                <span class="method-name">login(Test1, pass1)</span>
+                <span class="method-name">Register(User1, last1, Test1@fmail.com)</span>
                 <span class="method-start">0 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
-                <span class="method-name">login(Test2, pas2)</span>
+                <span class="method-name">Register(User2, last1, Test2@fmail.com)</span>
                 <span class="method-start">19 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
+                <img src="failed.png">
+                </img>
                 <span class="method-name">login(Test1, pass1)</span>
-                <span class="method-start">31 ms</span>
+                <span class="method-start">26 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
+                <img src="failed.png">
+                </img>
                 <span class="method-name">login(Test2, pas2)</span>
-                <span class="method-start">65 ms</span>
+                <span class="method-start">54 ms</span>
               </div> <!-- test-method -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
