@@ -5,7 +5,7 @@ import org.testng.annotations.Test;
 
 public class cdata {
 	
-@Test(invocationCount=2,dataProvider="getdata")
+@Test(dataProvider="getdata")
 public void login(String username, String Password  )
 
 {
