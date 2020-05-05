@@ -1,16 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite name="Failed suite [Dataprovider]" guice-stage="DEVELOPMENT">
-  <listeners>
-    <listener class-name="Baselearnpkg.Tlistener"/>
-  </listeners>
-  <test thread-count="5" name="login(failed)">
+<suite parallel="tests" name="Failed suite [Testingparam]" guice-stage="DEVELOPMENT">
+  <test thread-count="5" parallel="tests" name="XMLPara1(failed)">
+    <parameter name="browser" value="IE"/>
     <classes>
-      <class name="Baselearnpkg.readdata">
+      <class name="Baselearnpkg.Tparallel">
         <methods>
-          <include name="login" invocation-numbers="0 1"/>
+          <include name="testmethod"/>
+          <include name="Browser"/>
         </methods>
-      </class> <!-- Baselearnpkg.readdata -->
+      </class> <!-- Baselearnpkg.Tparallel -->
     </classes>
-  </test> <!-- login(failed) -->
-</suite> <!-- Failed suite [Dataprovider] -->
+  </test> <!-- XMLPara1(failed) -->
+</suite> <!-- Failed suite [Testingparam] -->

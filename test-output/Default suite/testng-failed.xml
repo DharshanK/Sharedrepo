@@ -3,12 +3,11 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="Baselearnpkg.Testparam">
+      <class name="Baselearnpkg.Tparallel">
         <methods>
-          <include name="login1"/>
-          <include name="login"/>
+          <include name="Browser"/>
         </methods>
-      </class> <!-- Baselearnpkg.Testparam -->
+      </class> <!-- Baselearnpkg.Tparallel -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

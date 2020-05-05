@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Failed suite [Dataprovider]]" guice-stage="DEVELOPMENT">
+  <listeners>
+    <listener class-name="Baselearnpkg.Tlistener"/>
+  </listeners>
+  <test thread-count="5" name="login(failed)(failed)">
+    <classes>
+      <class name="Baselearnpkg.readdata">
+        <methods>
+          <include name="login" invocation-numbers="0 1"/>
+        </methods>
+      </class> <!-- Baselearnpkg.readdata -->
+    </classes>
+  </test> <!-- login(failed)(failed) -->
+</suite> <!-- Failed suite [Failed suite [Dataprovider]] -->

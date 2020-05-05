@@ -7,7 +7,7 @@
   <test name="login">
   
     <classes>
-      <class name="Baselearnpkg.cdata"/>
+      <class name="Baselearnpkg.Tparallel"/>
      
     </classes>
     

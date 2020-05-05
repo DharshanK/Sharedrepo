@@ -1,15 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite name="Failed suite [Testingparam]" guice-stage="DEVELOPMENT">
-  <parameter name="pass" value="password4"/>
-  <parameter name="user" value="Test4"/>
-  <test thread-count="5" name="XMLPara(failed)">
+<suite parallel="tests" name="Failed suite [Testingparam]" guice-stage="DEVELOPMENT">
+  <test thread-count="5" parallel="tests" name="XMLPara1(failed)">
+    <parameter name="browser" value="IE"/>
     <classes>
-      <class name="Baselearnpkg.Testparam">
+      <class name="Baselearnpkg.Tparallel">
         <methods>
-          <include name="login"/>
+          <include name="testmethod"/>
+          <include name="Browser"/>
         </methods>
-      </class> <!-- Baselearnpkg.Testparam -->
+      </class> <!-- Baselearnpkg.Tparallel -->
     </classes>
-  </test> <!-- XMLPara(failed) -->
+  </test> <!-- XMLPara1(failed) -->
 </suite> <!-- Failed suite [Testingparam] -->

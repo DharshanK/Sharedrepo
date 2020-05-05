@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+
+
+<suite name="Testingparam" parallel="methods">
+
+
+
+  <test name="XMLPara">
+ 
+    <classes>
+  
+      <class name="Baselearnpkg.Tparallel">
+      <methods>
+       <parameter name="browser" value ="Chrome"></parameter>
+      
+      
+      <include name="testmethod"></include>
+
+      </methods>
+    </class>
+    </classes>
+    
+  </test> <!-- Test -->
+  
+<test name="XMLPara1">
+ 
+    <classes>
+  
+      <class name="Baselearnpkg.Tparallel">
+      <methods>
+     
+       <parameter name="browser" value ="IE"></parameter>
+      
+      <include name="testmethod"></include>
+
+      </methods>
+    </class>
+    </classes>
+    
+  </test> <!-- Test -->
+  
+   
+</suite> <!-- Suite -->
