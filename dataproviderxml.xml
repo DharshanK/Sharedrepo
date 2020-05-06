@@ -2,13 +2,24 @@
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 
 
-<suite name="Dataprovider">
+<suite name="Dataprovider" parallel="tests">
 
   <test name="login">
   
     <classes>
-      <class name="Baselearnpkg.Tparallel"/>
+    
+      <class name="Baselearnpkg.Tparallel">
+      
+     <methods>
      
+     <include name="chromeBrowser">
+     <parameter name="browser" value="chrome"></parameter>
+     </include>
+     <include name="IEBrowser">
+          <parameter name="browser" value="IE"></parameter>
+     </include>
+     </methods>
+     </class>
     </classes>
     
   </test> <!-- Test -->

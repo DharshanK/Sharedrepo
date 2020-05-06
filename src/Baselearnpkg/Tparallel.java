@@ -14,31 +14,41 @@ public class Tparallel {
 	
 	WebDriver driver ;
 	
-	@Test(dataProvider="Testdata")
-	public void Browser(String browser)
+	
+	@Test
+	@Parameters({"browser"})
+	public void chromeBrowser(String browser)
 	{
-		if(browser.equalsIgnoreCase("chrome"))
-		{
+	
+		
 		  System.setProperty("webdriver.chrome.driver", "C:\\webdrivers\\Chrome\\chromedriver.exe");
 			driver= new ChromeDriver();
 			driver.get("https://www.google.co.in");
-		
-		}
-		
-		if(browser.equalsIgnoreCase("IE"))
-		{
+	}
+
+	@Test
+	@Parameters({"browser"})
+	public void IEBrowser(String browser)	
+	{
+			if(browser.equalsIgnoreCase("IE"))
+			{
+			
 		  System.setProperty("webdriver.ie.driver", "C:\\webdrivers\\IEDriverServer\\IEDriverServer.exe");
 	
 			driver= new InternetExplorerDriver();
 			driver.get("https://www.google.co.in");
+			}
+			else {
+				System.out.println("check the paramemter value");
+			}
 			
 		}
-	}
+	
 
 
 
 
-@DataProvider(name="Testdata",parallel=true)
+@DataProvider(name="Testdata")
 public String[] senddata()
 {
  return new String[] {"chrome","IE"};
