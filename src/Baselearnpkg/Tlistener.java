@@ -11,12 +11,12 @@ public class Tlistener implements ITestListener{
 	public void onTestStart(ITestResult result) {
 		// TODO Auto-generated method stub
 
-		System.out.println("Secondline");
+	
 		if(true)
 		{
-			System.out.println("Print true");
+			System.out.println("Print false");
 		}
-		System.out.println("Testing  Modify");
+		System.out.println("Testing ");
 
 	}
 
