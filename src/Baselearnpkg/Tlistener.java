@@ -10,7 +10,7 @@ public class Tlistener implements ITestListener{
 	@Override
 	public void onTestStart(ITestResult result) {
 		// TODO Auto-generated method stub
-		if(false)
+		if(true)
 		{
 			System.out.println("Print false");
 		}
