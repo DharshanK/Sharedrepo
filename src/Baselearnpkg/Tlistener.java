@@ -10,7 +10,12 @@ public class Tlistener implements ITestListener{
 	@Override
 	public void onTestStart(ITestResult result) {
 		// TODO Auto-generated method stub
-		System.out.println("Test Modify");
+		System.out.println("Secondline");
+		if(true)
+		{
+			System.out.println("Print true");
+		}
+		System.out.println("Testing  Modify");
 	}
 
 	@Override
